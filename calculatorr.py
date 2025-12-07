@@ -21,7 +21,7 @@ while(count < number_of_runs):
         print("You have chosen division")
         result = number_1/number_2
         print(result)   
-    elif(choice == "0"):
-        break
+    else:
+        print("You have not chosen a valid option")
     count = count + 1
 print("Program ends.")
