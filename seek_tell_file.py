@@ -1,0 +1,5 @@
+f=open("sample.txt","r")
+f.seek(20)
+print("cursor position is at:",f.tell())
+print("next 15 characters: ",f.read(15))
+f.close()
