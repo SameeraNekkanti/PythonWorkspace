@@ -5,7 +5,7 @@ def sel_sort(l):
         for j in range(i+1,n):
             if (l[j]<l[mini]):
                 mini=j
-            l[i],l[mini]=l[mini],l[i]
+        l[i],l[mini]=l[mini],l[i]
     return l
 e = [2,9,4,9,6]
 print(sel_sort(e))
