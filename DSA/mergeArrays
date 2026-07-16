@@ -1,0 +1,26 @@
+m=int(input("enter number of elements:"))
+nums1=list(map(int, input("enter sorted elements of nums1: ").split()))
+n = int(input("Enter number of elements in nums2: "))
+nums2 = list(map(int, input("Enter sorted elements of nums2: ").split()))
+
+merged=[]
+
+i=0
+j=0
+while i<m and j<n:
+    if nums1[i]<=nums2[j]:
+        merged.append(nums1[i])
+        i+=1;
+    else:
+        merged.append(nums2[j])
+        j+=1
+
+while i<m:
+    merged.append(nums1[i])
+    i+=1
+
+while j<n:
+    merged.append(nums2[j])
+    j+=1
+
+print("Merged array: ", merged)
